@@ -1,0 +1,96 @@
+// ============================= home ======================================
+.home {  
+    background: linear-gradient(90deg, #fff, $gray-200);
+    
+    // small screen (from 992px to below)
+    @media  only screen and (max-width: 992px) {
+        // home-inner
+        .home-inner {
+            flex-direction: column;
+        }
+    }
+
+    // intro 
+    .intro {
+        width: 35%;
+        height: 100vh;
+        justify-content: center;
+        // background: $warning;
+        // small screen (from 992px to below)
+        @media  only screen and (max-width: 992px) {
+            width: 100%;
+            height: 50vh;
+            justify-content: flex-end; 
+            align-items: center;     
+        }
+       
+        // intro h1
+        h1 {
+            font-weight: 800;
+            color: $secondary;
+            font-size: 3.5rem;
+            text-transform: uppercase;
+            margin-bottom: 1.3rem;
+            // small screen (from 992px to below)
+            @media  only screen and (max-width: 992px) {
+                font-size: 3rem;
+            }   
+            // small screen (from 992px to below)
+            @media  only screen and (max-width: 500px) {
+                font-size: 2rem;
+            } 
+        }      
+
+        //p
+        p {
+            margin-bottom: 1.3rem;
+        }
+
+        //intro a link
+        .btn1, .btn2 {
+            margin-top: 1.1rem;
+            // small screen (from 500px to below)
+            @media  only screen and (max-width: 500px) {               
+                margin-top: 0.8rem;
+            } 
+        }
+
+        //intro a link
+        .btn1 {
+            padding: 10px 50px;  
+        }
+
+        //intro a link
+        .btn2 {
+            padding: 10px 37px;  
+        }
+    }
+
+    // home-pic 
+    .home-pic {
+        width: 65%;
+        height: 100vh;
+        background: url("../img/home/home-pic-desktop.png") no-repeat center bottom;
+        background-size: contain;
+
+        // small screen (from 992px to below)
+        @media  only screen and (max-width: 992px) {
+            width: 100%;
+            height: 50vh;
+        }
+
+        // small screen (from 768px to below)
+        @media (max-width: 768px) {
+            background: url("../img/home/mark-tablets.png") no-repeat center bottom;
+            background-size: contain;
+        }
+
+        // small screen (from 576px to below)
+        @media (max-width: 576px) {
+            background: url("../img/home/mark-mobiles.png") no-repeat center bottom;
+            background-size: contain;
+        }
+    }
+    
+}
+// ============================= home END ==================================
